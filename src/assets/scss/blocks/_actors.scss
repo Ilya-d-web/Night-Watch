@@ -1,0 +1,44 @@
+.actors {
+    &__container {
+    }
+
+    &__content {
+    }
+
+    &__title {
+    }
+
+    &__slider {
+    }
+
+    &__item {
+        border-radius: 0px;
+        flex: 0 0 190px;
+        max-height: 230px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        img {
+            border-radius: 50%;
+            height: 190px;
+            transition: all 0.3s ease 0s;
+        }
+
+        @include minw-breakpoint($md2 + px) {
+            &:hover {
+                img {
+                    transform: scale(0.95);
+                }
+                & .actors__name {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__name {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20 / 18 * 100%;
+    }
+}

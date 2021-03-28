@@ -1,0 +1,137 @@
+.genres {
+    &__container {
+    }
+
+    &__content {
+        margin-right: 30px;
+
+        @include maxw-breakpoint($md3 + px) {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__items {
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px -15px -15px -15px;
+
+        @include maxw-breakpoint($md3 + px) {
+            margin: -10px -10px -10px -10px;
+        }
+    }
+
+    &__column {
+        flex: 0 1 25%;
+        padding: 15px 15px 15px 15px;
+
+        @include maxw-breakpoint($md2 + px) {
+            flex: 0 1 33.333%;
+        }
+        @include maxw-breakpoint($md3 + px) {
+            flex: 0 1 50%;
+            padding: 10px 10px 10px 10px;
+        }
+        @include maxw-breakpoint($md4 + px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__item {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        padding: 40px 10px 40px 10px;
+        height: 100%;
+        transition: all 0.3s ease 0s;
+
+        @include minw-breakpoint($md2 + px) {
+            opacity: 0.85;
+        }
+
+        &--1 {
+            background: linear-gradient(109.31deg, #fd093f 2.4%, #f383f1 100%);
+        }
+        &--2 {
+            background: linear-gradient(114.5deg, #0fffda 2.22%, #3cdb77 68.84%);
+        }
+        &--3 {
+            background: linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%);
+        }
+        &--4 {
+            background: linear-gradient(109.31deg, #fd093f 2.4%, #fb1378 2.41%, #fccb1a 100%);
+        }
+        &--5 {
+            background: linear-gradient(109.31deg, #ff6472 2.4%, #fda75d 100%);
+        }
+        &--6 {
+            background: linear-gradient(110.16deg, #13547a 2.37%, #80d0c7 96.77%);
+        }
+        &--7 {
+            background: linear-gradient(109.93deg, #fff77b 2.37%, #ffbf42 50%);
+        }
+        &--8 {
+            background: linear-gradient(109.31deg, #1fa2ff 2.4%, #1fa2ff 2.41%, #1f535c 97.46%);
+        }
+
+        @include minw-breakpoint($md2 + px) {
+            &:hover {
+                transform: translate(-3px, -3px);
+                opacity: 1;
+
+                & .genres__text {
+                    &::after {
+                        transform: translateX(120%);
+                        transition: all 0.5s ease-in 0s;
+                    }
+                }
+            }
+        }
+    }
+
+    &__icon {
+        max-width: 90px;
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        @include maxw-breakpoint($md3 + px) {
+            max-width: 75px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        font-size: 28px;
+        font-weight: 700;
+        overflow: hidden;
+        padding-bottom: 4px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2.5px;
+            bottom: 0px;
+            left: 0;
+            background: linear-gradient(90deg, transparent, $white);
+
+            transform: translateX(-120%);
+        }
+        @include maxw-breakpoint($md3 + px) {
+            font-size: 24px;
+        }
+    }
+}

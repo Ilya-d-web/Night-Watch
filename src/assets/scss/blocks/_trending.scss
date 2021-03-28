@@ -1,0 +1,32 @@
+.section {
+    &__content {
+    }
+
+    &__title {
+    }
+}
+
+.trending {
+    &__container {
+    }
+
+    &__content {
+    }
+
+    &__title {
+    }
+
+    &__slider {
+        margin-bottom: 35px;
+
+        @include maxw-breakpoint($md3 + px) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__item {
+    }
+
+    &__button {
+    }
+}

@@ -1,0 +1,39 @@
+//!<Медиа запросы>
+@mixin maxw-breakpoint($bp) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}
+
+@mixin minw-breakpoint($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
+//?</Медиа запросы>
+////================================================================
+////================================================================
+//!<Создание шрифта>
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+//?</Создание шрифта>
+////================================================================
+////================================================================
+//!<Определение системных шрифтов>
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"),
+        local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+//?</Определение системных шрифтов>
+////================================================================
+////================================================================
