@@ -1005,11 +1005,14 @@ body {
     @media (max-width: 767.98px) {
       .advertising__content {
         margin-right: 0; } }
+  @media (max-width: 767.98px) {
+    .advertising {
+      padding: 45px 0; } }
   .advertising__row {
     display: flex;
     align-items: center;
     padding: 10px 50px 10px 50px;
-    background: linear-gradient(35deg, rgba(146, 15, 146, 0.9), rgba(37, 6, 37, 0.5));
+    background: url("../images/advertising0.png") center/cover no-repeat;
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     min-height: 270px; }
@@ -1022,7 +1025,8 @@ body {
     font-size: calc(34px + 30 * (100vw / 1600));
     font-weight: 700;
     line-height: 110%;
-    margin-right: 80px; }
+    margin-right: 80px;
+    text-shadow: 2px 2px 1px #000; }
     @media (max-width: 991.98px) {
       .advertising__text {
         margin-right: 40px;

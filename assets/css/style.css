@@ -1555,13 +1555,15 @@ body.no-scroll {
     }
 }
 
+.no-webp .advertising__row{
+    background: url("../images/advertising.png") center/cover no-repeat; }
+
 .advertising__row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     padding: 10px 50px 10px 50px;
-    background: linear-gradient(35deg, rgba(146, 15, 146, 0.9), rgba(37, 6, 37, 0.5));
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     min-height: 270px;
@@ -1604,3 +1606,5 @@ body.no-scroll {
 }
 
 .webp .begin{ background: url(../images/background.webp) center/cover no-repeat fixed; }
+
+.webp .advertising__row{ background: url(../images/advertising.webp) center/cover no-repeat; }
