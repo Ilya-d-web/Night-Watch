@@ -986,6 +986,9 @@ body {
     margin-bottom: 10px; }
     .item-year__image img {
       max-width: 100%; }
+    .item-year__image video {
+      display: block;
+      max-width: 100%; }
     @media (max-width: 767.98px) {
       .item-year__image {
         max-width: 200px; } }
